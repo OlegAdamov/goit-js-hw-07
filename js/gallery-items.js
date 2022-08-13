@@ -62,4 +62,25 @@ export const galleryItems = [
       'https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg',
     description: 'Lighthouse Coast Sea',
   },
+  {
+    preview:
+      'https://picsum.photos/340?random-1.jpg',
+    original:
+      'https://picsum.photos/1280?random-1.jpg',
+    description: 'Lighthouse Coast Sea',
+  },
+  {
+    preview:
+      'https://picsum.photos/340?random-2.jpg',
+    original:
+      'https://picsum.photos/1280?random-2.jpg',
+    description: 'Lighthouse Coast Sea',
+  },
+  {
+    preview:
+      'https://picsum.photos/340?random-3.jpg',
+    original:
+      'https://picsum.photos/1280?random-3.jpg.jpg',
+    description: 'Lighthouse Coast Sea',
+  },
 ];
