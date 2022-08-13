@@ -67,20 +67,20 @@ export const galleryItems = [
       'https://picsum.photos/340?random-1.jpg',
     original:
       'https://picsum.photos/1280?random-1.jpg',
-    description: 'Lighthouse Coast Sea',
+    description: 'Some random image',
   },
   {
     preview:
       'https://picsum.photos/340?random-2.jpg',
     original:
       'https://picsum.photos/1280?random-2.jpg',
-    description: 'Lighthouse Coast Sea',
+    description: 'Some random image',
   },
   {
     preview:
       'https://picsum.photos/340?random-3.jpg',
     original:
       'https://picsum.photos/1280?random-3.jpg.jpg',
-    description: 'Lighthouse Coast Sea',
+    description: 'Some random image',
   },
 ];
