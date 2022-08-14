@@ -32,16 +32,16 @@ function onItemsGalleryItemClick(event) {
    
     const instance = basicLightbox.create(`<img src="${source}">`);
     instance.show();
-
+    
     if (instance.show() === true) {
-        onGalleryContainer.addEventListener('keydown', keyPress)
+        document.addEventListener('keydown', keyPress)
 
         function keyPress(event) {
             if (event.key === "Escape") {
-                instance.close()
+                instance.close();
+                document.removeEventListener('keydown', keyPress);
             }
         }
-    }
-
+    } 
 }
 
