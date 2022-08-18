@@ -30,18 +30,27 @@ function onItemsGalleryItemClick(event) {
     if (event.target.classList.contains("gallery")) return;
     const source = event.target.dataset.source;
    
-    const instance = basicLightbox.create(`<img src="${source}">`);
-    instance.show();
-    
-    if (instance.show() === true) {
-        document.addEventListener('keydown', keyPress)
+    const instance = basicLightbox.create(`<img src="${source}">`, {
 
-        function keyPress(event) {
-            if (event.key === "Escape") {
-                instance.close();
-                document.removeEventListener('keydown', keyPress);
-            }
+	closable: true,
+
+	className: '',
+
+        onShow: (instance) => {
+            document.addEventListener('keydown', keyPress)
+    },
+
+        onClose: (instance) => {
+            document.removeEventListener('keydown', keyPress);
+    }
+});
+    instance.show();
+
+    function keyPress(event) {
+        if (event.key === "Escape") {
+            instance.close();
         }
-    } 
-}
+    }
+
+    }
 
